@@ -17,7 +17,7 @@ Para ver cualquiera de los proyectos, simplemente abre el archivo `index.html` d
 
 ## Contacto
 
-Puedes seguirme o contactarme en GitHub: [Su-debug-glitch](https://github.com/tu-usuario-github)
+Puedes seguirme o contactarme en GitHub: [Su-debug-glitch](https://github.com/Su-debug-glitch)
 
 ---
 
