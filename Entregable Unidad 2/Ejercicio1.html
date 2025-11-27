@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ejercicio1.css">
+    <title>Menús accesibles por teclado</title>
+</head>
+<body>
+    <h1>Menú 1</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio" tabindex="1">Inicio</a></li>
+                <li><a href="#servicios" tabindex="2">Servicios</a></li>
+                <li><a href="#contacto" tabindex="3">Contacto</a></li>
+            </ul> 
+        </nav>
+        
+    <h1>Menú 2</h1>
+        <nav>
+            <ul id="vertical">
+                <li><a href="#nosotros" tabindex="4">Nosotros</a></li>
+                <li><a href="#productos" tabindex="5">Productos</a></li>
+                <li><a href="#blog" tabindex="6">Blog</a></li>
+            </ul> 
+        </nav>
+
+    <h1>Menú 3</h1>
+        <nav>
+            <ul>
+                <li><a href="#opcion1" tabindex="7">Opción 1</a></li>
+                <li><a href="#opcion2" tabindex="8">Opción 2</a></li>
+                <li><a href="#opcion3" tabindex="9">Opción 3</a></li>
+            </ul>
+        </nav>
+
+<!--
+Para navegar con el teclado:
+TAB: avanza en orden por las opciones de los menús. 
+Al usar números positivos en el "tabindex", se sigue estrictamente ese orden.
+Es decir, los que tengan 1 recibirán antes el foco que los que tengan 2, y así sucesivamente.
+TAB + SHIFT: retrocede, igual que el TAB pero en orden inverso.
+ESPACIO: activa el link (si existiera).
+-->
+</body>
+</html>

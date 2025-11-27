@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario accesible</title>
+    <link rel="stylesheet" href="ejercicio2.css">
+</head>
+<body>
+    <form role="form" aria-labelledby="titulo-form">
+        <h2 id="titulo-form">Formulario de contacto</h2>
+
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" aria-required="true" aria-describedby="ayuda-nombre">
+            <small id="ayuda-nombre">Introduce tu nombre completo</small>
+        </div>
+
+        <div>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" name="email" id="email" aria-required="true" aria-describedby="ayuda-email">
+            <small id="ayuda-email">Ejemplo: usuario@dominio.com</small>
+        </div>
+
+        <div>
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" id="mensaje" aria-required="false"></textarea>
+        </div>
+
+        <button type="submit" role="button">Enviar formulario</button>
+    </form>
+</body>
+</html>

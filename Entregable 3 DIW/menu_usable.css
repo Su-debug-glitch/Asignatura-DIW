@@ -1,0 +1,50 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    background-color: #7ecfb9;
+}
+
+header {
+    background-color: #132e27;
+    color: white;
+    padding: 1.3rem;
+    text-align: center;
+}
+
+nav {
+    background-color: rgb(160, 197, 218);
+}
+
+.menu {
+    list-style: none;
+    display:flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.menu a:hover {
+    background-color: blue;
+}
+
+.menu a.activo {
+    background-color: #036; 
+}
+
+.menu a:focus {
+    background-color: #020b1c;
+    outline: 3px solid #132e27;
+    outline-offset: 2px;
+}

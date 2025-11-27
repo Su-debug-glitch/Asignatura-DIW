@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/validacion.css">
+</head>
+<body>
+<main>
+    <h1>Registro de Usuario</h1>
+    <form action="datos.html" method="get" autocomplete="off">
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" name="nombre" id="nombre" required minlength="3">
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" required pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-.]+)+$">
+    <label for="telefono">Teléfono:</label>
+    <input type="text" name="telefono" id="telefono" required pattern="\d{9,}">
+    <label for="fechaNacimento">Fecha de nacimiento:</label>
+    <input type="date" name="fechaNacimento" id="fechaNacimiento" required pattern="\d{2}/\d{2}/\d{4}">
+
+    <button type="submit">Continuar</button>
+    </form>
+</main>
+</body>
+</html>

@@ -1,0 +1,33 @@
+nav {
+    margin-bottom: 20px;
+}
+
+h1 {
+    color:#df1141;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px
+}
+
+#vertical {
+    flex-direction: column;
+    gap: 50px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+}
+
+a:focus {
+    outline: 2px solid #d45f7b;
+}

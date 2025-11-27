@@ -1,0 +1,33 @@
+table {
+    width: 80%;
+    margin: 20px auto;
+    border: 3px solid #181f53;
+    border-collapse:collapse; /* Bordes colapsados */
+    table-layout:fixed; /* Columnas con ancho fijo */
+    empty-cells: show; /* Mostrar bordes incluso en celdas vacías */
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(50, 49, 49);
+}
+th, td {
+    border: 2px solid #6ba4c7;
+    padding: 15px 10px;
+    text-align: left;
+    overflow: hidden; /* Para no desbordar texto */
+    text-overflow: ellipsis; /* Añade puntos suspensivos si texto muy largo */
+    white-space: nowrap;
+}
+th {
+    background-color: #4b9ddb;
+    color: white;
+}
+td:empty {
+    background-color: #f9f9f9; /* Resaltar celdas vacías */
+}
+
+caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-weight: bold;
+    font-family: Arial;
+    color: rgb(107, 70, 121);
+}

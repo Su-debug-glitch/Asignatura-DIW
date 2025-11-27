@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    background-color: white;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1.2rem;
+    width: 300px ; /* Ajusta el ancho del formulario */
+    max-width: 600px; /* Para pantallas grandes */
+    margin: 50px 20px; /* Espacio alrededor del formulario */
+    float: left; /* Coloca el formulario a la izquierda */
+}
+
+.form-group {
+    margin-bottom: ;
+}
+
+label {
+    display: block;
+    margin-bottom: ;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select {
+    width: ;
+    padding: ;
+    border: d;
+    border-radius: ;
+    box-sizing: ;
+}
+
+textarea {
+    width: ;
+    padding: ;
+    border: d;
+    border-radius: ;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: ;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    display: inline-block;
+    margin-right: ;
+}
+
+button {
+    width: ;
+    padding: ;
+    background-color: ;
+    color: ;
+    border: ;
+    border-radius: ;
+    cursor: pointer;
+    margin-top: ;
+}
+
+button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+.error {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+        margin: 10px;
+    }
+}

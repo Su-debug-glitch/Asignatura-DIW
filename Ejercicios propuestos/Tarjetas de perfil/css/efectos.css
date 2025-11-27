@@ -1,0 +1,28 @@
+.tarjeta:hover {
+  box-shadow: 0 8px 36px #4099c340;
+  transform: scale(1.05) rotate(-2.5deg);
+}
+
+.tarjeta:hover img {
+  animation: giro 0.7s;
+}
+@keyframes giro {
+  0% {transform: rotate(0deg);}
+  30% {transform: rotate(18deg);}
+  60% {transform: rotate(-12deg);}
+  100% {transform: rotate(0deg);}
+}
+
+.tarjeta::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  background: rgba(7,117,229,0.06);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s;
+}
+.tarjeta:hover::after {
+  opacity: 1;
+}

@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4fdf6;
+  color: #333;
+}
+
+header {
+  background: #2e7d32;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display:flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header h1 { 
+    margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
+  gap: 20px;
+  padding: 0 15px;
+}
+
+main { 
+    flex: 2; 
+}
+
+aside { 
+    flex: 1; 
+    background: #e8f5e9; 
+    padding: 15px; 
+    border-radius: 6px; 
+}
+
+.destacado {
+  background: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 4px #ccc;
+}
+.destacado img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+
+.testimonios {
+  background: #c8e6c9;
+  padding: 15px;
+  border-radius: 6px;
+}
+.testimonios blockquote {
+  margin: 10px 0;
+  padding-left: 10px;
+  border-left: 3px solid #2e7d32;
+  font-style: italic;
+}
+
+aside h3 { margin-top: 0; }
+aside ul { padding-left: 20px; }
+aside ul li { margin: 6px 0; }
+
+footer {
+  background: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}

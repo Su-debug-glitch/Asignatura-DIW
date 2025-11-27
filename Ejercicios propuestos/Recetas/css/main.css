@@ -1,0 +1,90 @@
+body {
+  /* Fuente principal y fondo */
+  font-family: 'Segoe UI', Arial, sans-serif; /* Fuentes limpias y modernas */
+  background-color: rgb(222, 232, 243) ;/* Fondo claro, casi blanco, para lectura */
+  margin: 0 10px; /* Separación mínima en los laterales */
+}
+
+h1 {
+  text-align: center ;/* Título centrado y color destacado */
+  color: rgb(6, 6, 94);/* Azul intenso */
+  margin: 20px 15px; /* Espaciado arriba y abajo */
+}
+
+.grid-recetas {
+  /* Layout de recetas con grid responsivo */
+  display: grid;                             /* Activa grid layout CSS3 */
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  /* Las columnas se ajustan a mínimo 260px, máximo 1fr para rellenar el ancho,
+     y se crean automáticamente según el espacio de pantalla */
+  gap: 2rem;                                 /* Espaciado entre las fichas */
+  margin: 2rem auto;                         /* Espacio arriba/abajo y centrado */
+  max-width: 1000px;                         /* Anchura máxima para evitar que se desparrame en pantallas grandes */
+}
+.ficha {
+  /* Caja de cada receta */
+  background-color: white;   /* Fondo blanco */
+  border-radius: 5px;    /* Bordes redondeados */
+  overflow: hidden;      /* Oculta overflow de imágenes o contenido */
+  box-shadow: 0 2px 12px #b9e1ed70;          /* Sombra azul suave para "levantar" la ficha */
+  display: flex;                             /* Flexbox para layout vertical interno */
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.ficha img {
+  /* Imagen de la receta dentro de la ficha */
+  width: 100%; 
+  max-width: 260px; /* Limita el ancho de la foto para estética */
+  height: auto;
+  box-shadow: 0 2px 8px #bfd4ff4d;           /* Sombra suave */
+  border-radius: 5px;
+}
+
+.ficha h2 {
+  margin-top: 0.75rem;
+  color:rgb(6, 6, 94);
+}
+
+.ficha p {
+  margin: 0.5rem 0;
+  text-align: center;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.etiquetas {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.etiquetas span {
+  /* Etiquetas de tipo receta */
+  background-color: rgb(179, 179, 241);   /* Fondo celeste pálido */
+  color: rgb(10, 10, 113);    /* Texto azul oscuro */
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.btn-modal {
+  /* Botón (label) para abrir el modal */
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .55rem 1.6rem;
+  border-radius: 7px;
+  background: #0575e6;                       /* Azul brillante */
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: center;
+  transition: background 0.2s;               /* Suaviza el hover */
+}
+.btn-modal:hover {
+  background: #05589f;                       /* Oscurece el azul al pasar el ratón */
+}

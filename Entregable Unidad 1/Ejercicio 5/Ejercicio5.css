@@ -1,0 +1,134 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f7fb;
+  color: #333;
+}
+
+header {
+  background: #0d47a1;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 { 
+  margin: 5px; 
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.banner {
+  background: #1976d2;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.banner h2 { margin: 0; }
+
+.banner p {
+  color:#bbdefb;
+  font-style: italic;
+  font-size:large;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+  padding: 0 15px;
+}
+main { flex: 2; }
+
+aside {
+  flex: 1;
+  background: #e3f2fd;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.servicios .grid-servicios {
+  display: grid;
+  gap: 15px;
+}
+.servicio {
+  background: white;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 0 0 5px #ccc;
+}
+.servicio span {
+  font-size: 2em;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.casos-exito {
+  margin-top: 20px;
+}
+.carrusel {
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px #ccc;
+}
+.carrusel blockquote {
+  margin: 10px 0;
+  font-style: italic;
+  border-left: 3px solid #1976d2;
+  padding-left: 10px;
+}
+
+aside form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+aside input, aside textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+aside button {
+  background: #0d47a1;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+aside button:hover {
+  background: #1565c0;
+}
+
+footer {
+  background: #0d47a1;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+footer .enlaces a {
+  color: #bbdefb;
+  text-decoration: none;
+  margin: 0 5px;
+}

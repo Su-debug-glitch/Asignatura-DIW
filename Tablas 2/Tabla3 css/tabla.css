@@ -1,0 +1,43 @@
+table {
+  font: .9em Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  text-align: center;
+  margin: 0 auto;
+}
+table th {
+  background: #F5F5F5 url(fondo_gris.png) no-repeat;
+  padding: 1em;
+}
+table th.euro {
+  background: #E6F3FF url(euro.png) no-repeat center center;
+  padding: 2 .8em 0 1.2em;
+  background-size: cover;
+}
+table th.dolar {
+  background: #E6F3FF url(dolar.png) no-repeat center center;
+  padding: 2 .8em 0 1.2em;
+  background-size: cover;
+}
+table th.libra {
+  background: #E6F3FF url(libra.png) no-repeat center center;
+  padding: 2 .8em 0 1.2em;
+  background-size: cover;
+}
+table th.yen {
+  background: #E6F3FF url(yen.png) no-repeat center center;
+  padding: 2 .8em 0 1.2em;
+  background-size: cover;
+}
+table th, table, td {
+  border: 1px solid #333;
+  line-height: 2em;
+}
+.fila {
+  text-align: left;
+}
+.par {
+  background-color:#FFFFCC;
+}
+table tr:hover {
+  background: #bebe42 !important;
+}

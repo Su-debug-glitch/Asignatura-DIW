@@ -1,0 +1,18 @@
+input:invalid, select:invalid, textarea:invalid {
+    border: 2px solid #e32959;
+    background-color: #fbe9e9;
+}
+input:valid, select:valid, textarea:valid {
+    border: 2px solid #4cb040;
+}
+input:required {
+    background-image: linear-gradient(120deg, #fefefe 70%, #eaf7ff 100%);
+}
+
+input:focus:invalid, select:focus:invalid, textarea:focus:invalid {
+    box-shadow: 0 0 6px #e32959a0;
+}
+
+input:focus:valid, select:focus:valid, textarea:focus:valid {
+    box-shadow: 0 0 6px #4cb040a0;
+}

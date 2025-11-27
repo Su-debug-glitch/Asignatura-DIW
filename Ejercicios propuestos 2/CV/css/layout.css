@@ -1,0 +1,56 @@
+body {
+    background-color: rgb(232, 249, 255);
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.perfil {
+    width: 65%;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px #d6e4ff33;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    animation: fadeIn 1.2s;
+    padding: 20px 20px;
+}
+
+.perfil.contacto{
+    background-color: inherit;
+}
+
+.trabajo {
+    width: 90%;
+    max-width: 700px;
+    background: #f6fafd;
+    border-left: 4px solid #0971f1;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+    padding: 20px;
+    border-radius: 8px;
+    transition: box-shadow 0.3s;
+}
+.trabajo:hover {
+    box-shadow: 0 4px 24px #0575e64d;
+}
+
+.skills-lista li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eeee;
+}
+
+.educacion-lista li {
+    padding: 1rem 0;
+    border-bottom: 1px dotted #ccc;
+}
+
+@media (max-width: 650px) {
+    .cv-header {
+        padding: 1rem 0.2rem;
+    }
+    main, section {
+        padding: 0.5rem;
+    }
+}

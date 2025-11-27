@@ -1,0 +1,44 @@
+.menu-lateral {
+    position: fixed;
+    top: 0; left: 0;
+    width: 170px;
+    height: 100%;
+    background: #03406d;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    z-index: 2;
+}
+.menu-lateral a {
+    color: #fff;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 10px;
+    border-radius: 20px 0 0 20px;
+    font-size: 1.08rem;
+    transition: background .2s, font-weight .2s;
+}
+.menu-lateral a:hover,
+.menu-lateral a.activo {
+    background: #0361a0;
+    font-weight: bold;
+}
+@media (max-width: 700px) {
+    .menu-lateral {
+        width: 100%;
+        position: static;
+        flex-direction: row;
+        height: auto;
+        padding-top: 0;
+        justify-content: center;
+    }
+    .menu-lateral a {
+        border-radius: 0 0 20px 20px;
+        margin-bottom: 0;
+        margin-right: 12px;
+    }
+}

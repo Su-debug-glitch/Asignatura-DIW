@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Ejercicios Pseudoclases CSS</title>
+<style>
+/* Ejercicio 1 */
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+/* Ejercicio 2 */
+li:first-child {
+  color: green;
+  font-weight: bold;
+}
+
+/* Ejercicio 3 */
+li:last-child {
+  color: red;
+}
+
+/* Ejercicio 4 */
+a.visited-link {
+  color: blue;
+  text-decoration: none;
+  margin-right: 15px;
+}
+a.visited-link:visited {
+  color: purple;
+}
+
+/* Ejercicio 5 */
+input:focus {
+  border: 2px solid blue;
+  background-color: #e0f0ff;
+}
+input {
+  border: 2px solid gray;
+  padding: 8px;
+}
+
+/* Ejercicio 6 */
+section p:first-of-type {
+  color: blue;
+}
+
+/* Ejercicio 7 */
+p::first-letter {
+  color: red;
+  font-size: 200%;
+  font-weight: bold;
+}
+
+/* Ejercicio 8 */
+h2::before {
+  content: "★ ";
+  color: gold;
+}
+h2::after {
+  content: " ★";
+  color: gold;
+}
+
+/* Ejercicio 9 */
+p:not(.importante) {
+  color: gray;
+}
+.importante {
+  color: darkred;
+  font-weight: bold;
+}
+
+/* Ejercicio 10 */
+
+:is(h2) {
+  color: yellow;
+  font-family: Courier, sans-serif;
+}
+
+h1, h2, h3 {
+  color: navy;
+  font-family: Arial, sans-serif;
+}
+
+
+
+</style>
+</head>
+
+
+
+<body>
+
+<h2>Ejercicio 1</h2>
+<a href="#">Enlace CSS</a>
+
+<h2>Ejercicio 2</h2>
+<ul>
+  <li>Inicio</li>
+  <li>Servicios</li>
+  <li>Contacto</li>
+</ul>
+
+<h2>Ejercicio 3</h2>
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+</ul>
+
+<h2>Ejercicio 4</h2>
+<a href="https://www.google.com" target="_blank" class="visited-link">Google</a>
+<a href="https://www.wikipedia.org" target="_blank" class="visited-link">Wikipedia</a>
+<a href="https://www.youtube.com" target="_blank" class="visited-link">YouTube</a>
+
+<h2>Ejercicio 5</h2>
+<input type="text" placeholder="Escribe tu nombre...">
+
+<h2>Ejercicio 6</h2>
+<section>
+  <p>Este párrafo debe ser azul.</p>
+  <p>Este párrafo debe mantener el color negro.</p>
+</section>
+
+<h2>Ejercicio 7</h2>
+<p>El CSS permite aplicar estilos a partes específicas del texto.</p>
+
+<h2>Ejercicio 8</h2>
+<h2>Título decorado</h2>
+
+<h2>Ejercicio 9</h2>
+<p>Párrafo normal.</p>
+<p class="importante">Párrafo importante.</p>
+<p>Párrafo normal 2.</p>
+
+<h2>Ejercicio 10</h2>
+<h1>Encabezado 1</h1>
+<h2>Encabezado 2</h2>
+<h3>Encabezado 3</h3>
+
+</body>
+</html>

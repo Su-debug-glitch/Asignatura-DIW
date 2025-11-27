@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos de Programación</title>
+    <link rel="stylesheet" href="Ejercicio1.css">
+</head>
+<body>
+    <header>
+        <h1>Cursos de Programación</h1>
+        <nav>
+            <ul>
+                <li><a href="#Inicio">Inicio</a></li>
+                <li><a href="#Cursos">Cursos</a></li>
+                <li><a href="#Opiniones">Opiniones de alumnos</a></li>
+                <li><a href="#Tecnologías">Tecnologías</a></li>
+                <li><a href="#Contacto">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <aside>
+            <h3>Regístrate</h3>
+            <form action="#" method="post">
+                <label for="name">Nombre</label><br>
+                <input type="text" name="name" id="name" placeholder="Escribe tu nombre" required><br>
+                <label for="apellidos">Apellidos</label><br>
+                <input type="text" name="apellidos" id="apellidos" placeholder="Escribe tu apellido" required><br>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" placeholder="Escribe tu email" required><br><br>
+                <input type="submit" name="submit" id="submit" value="Registrarse">
+            </form>
+        </aside>
+
+    <main>
+        <section class="banner" id="Inicio">
+            <h2>Novedades en la plataforma</h2>
+            <p>Nuevo curso de <strong>Python</strong> disponible desde octubre 2025. ¡No te lo pierdas!</p>
+        </section>
+        <section id="Cursos">
+            <h2>Listado de Cursos</h2>
+            <p>¡Aquí podrás descubrir todos los cursos que ofrecemos!</p>
+
+            <nav class="indice">
+                <h3>Índice de Cursos</h3>
+                    <ol>
+                        <li><a href="#art1">Curso de Java</a></li>
+                        <li><a href="#art2">Curso de C#</a></li>
+                    </ol>
+            </nav>
+
+        <article id="art1">
+            <h3>Curso de JAVA</h3>
+            <img src="java.png" alt="Java Logo" width="300px" height="150px">
+            <p>En este curso se dan los fundamentos y las bases del lenguaje JAVA.</p>
+            <details>
+                <summary>Leer más...</summary>
+                <p>JAVA es uno de los lenguajes más utilizados por programadores a día de hoy.<br>
+                En este curso aprenderás sobre variables, OOP, funciones, métodos y mucho más.</p>
+            </details>
+        </article>
+
+        <article id="art2">
+            <h3>Curso de C#</h3>
+            <img src="cSharp.png" alt="C# Logo" width="300px" height="150px">
+            <p>Un curso completo sobre el lenguaje más usado para programar videojuegos: C#</p>
+            <details>
+                <summary>Leer más...</summary>
+                <p>Si te apasiona el mundo de los videojuegos, este curso es ideal para empezar.<br>
+                    Veremos Unity, programación orientada a objetos y patrones de diseño.</p>
+            </details>
+        </article>
+        </section>
+
+        <section id="Opiniones">
+                <h2>Opiniones de nuestros alumnos</h2>
+                <blockquote>
+                    “Gracias a este curso de Java ahora trabajo como desarrolladora junior.”  
+                    <cite>Susana Fernández</cite>
+                </blockquote>
+                <blockquote>
+                    “El curso de C# me ayudó a empezar a programar videojuegos en Unity.”  
+                <cite>José Miguel López</cite>
+                </blockquote>
+            </section>
+
+            <section id="Tecnologias">
+                <h2>Tecnologías que usamos</h2>
+                <ul>
+                    <li>Java</li>
+                    <li>C#</li>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>MySQL</li>
+                </ul>
+            </section>  
+    </main>
+    </div>
+
+        <footer id="Contacto">
+            <p>Síguenos en nuestras redes para no perderte nada:</p>
+            <a href="#">Facebook</a><br>
+            <a href="#">X</a><br>
+            <a href="#">Instagram</a><br>
+            <p>Soporte: <a href="#">soporte@cursosprogramacion.com</a></p>
+            <p>&copy; 2025 Plataforma Online de Cursos de Programación</p>
+        </footer>
+</body>
+</html>

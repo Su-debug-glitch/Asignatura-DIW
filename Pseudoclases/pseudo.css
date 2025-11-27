@@ -1,0 +1,58 @@
+a:link {
+    color: aquamarine;
+}
+
+a:visited {
+    color: blue;;
+}
+
+a:hover {
+    background-color: black;
+    color:white;
+}
+
+li:first-child {
+    color:blueviolet;
+}
+
+li:last-child {
+    color: red;
+}
+
+#campo:focus {
+    border: 5px black solid;
+}
+
+section p:first-of-type {
+    color: rgb(95, 100, 100)
+}
+
+p::first-letter {
+    font-size: 40px;
+    color:red;
+}
+
+h2::before {
+    content: "Este es el ";
+    font-family: 'Courier New', Courier, monospace;
+    color:brown;
+}
+
+h2::after {
+    content: " ...fin del título";
+    font-family: 'Times New Roman', Times, serif;
+    color:crimson;
+}
+
+p:not(.importante) {
+    color:gray;
+}
+
+.importante {
+    font-weight: bold;
+}
+
+:is(h1, h2) {
+    color:antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+}
